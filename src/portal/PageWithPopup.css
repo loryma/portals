@@ -1,26 +1,71 @@
-.outer-popup {
-  min-height: 20vh;
+.avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-image: url('./cat.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.avatar--main {
+  cursor: pointer;
+}
+
+.user-info {
   padding: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(51, 51, 51, 0.336) 2px 2px 4px, rgba(51, 51, 51, 0.336) -2px -2px 4px;
+  background-color: white;
+  max-width: 380px;
+  width: 90vw;
+}
+
+.user-info__avatar {
+  margin: 0 auto;
+}
+
+.user-info__name {
   text-align: center;
-  color: #333;
-  box-shadow: rgba(51, 51, 51, 0.425) 2px 2px 2px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.inner-popup {
-  min-height: 40vh;
-  min-width: 300px;
-  padding: 1rem;
-  font-size: 1rem;
-  color: #666;
-  box-shadow: rgba(51, 51, 51, 0.425) 2px 2px 2px;
-  background-color: rgb(238, 255, 80);
+.user-info__actions {
+  padding-top: 1rem;
 }
 
-.pink {
-  background-color: pink;
+.user-info__actions-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-.yellow {
-  background-color: blanchedalmond;
+.user-info__action-icon {
+  margin-right: 8px;
+  width: 30px;
 }
 
+.block-user-popup {
+  background-color: white;
+  max-width: 200px;
+  width: 90vw;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  box-shadow: rgba(51, 51, 51, 0.336) 2px 2px 4px, rgba(51, 51, 51, 0.336) -2px -2px 4px;
+}
+
+.block-user-popup__header {
+  text-align: center;
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.block-user-popup__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.block-user-popup__button {
+  padding: 0.2rem 1rem;
+}

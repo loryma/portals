@@ -17,13 +17,10 @@ const Popup = ({ children, onClose, isOpened }) => {
           className="overlay" 
           role="button"
           tabIndex={0}
-          onClick={onClose}
+          onClick={handleCloseClick}
         ></div>
           <div className="content">
             {children}
-            <button className="close" onClick={handleCloseClick}>
-              Close popup
-            </button>
           </div>
       </div>
     </Portal>

@@ -4,8 +4,7 @@ import PageWithPopup from './portal/PageWithPopup';
 function App() {
   return (
     <div className="App">
-      <PageWithPopup buttonText={'Click me to see first popup'} contentClass={"pink"} />
-      <PageWithPopup buttonText={'Click me to see second popup'} contentClass={"yellow"} />
+      <PageWithPopup />
     </div>
   );
 }
